@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: #0B0B0C;
+  --foreground: #F5F5F4;
+  --card: #151517;
+  --border: #27272A;
+  --primary: #C9A96A;
+  --secondary: #8B7355;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.gold-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.btn-gold {
+  @apply bg-[#C9A96A] text-[#0B0B0C] px-6 py-2.5 rounded-lg font-bold transition-all hover:bg-[#8B7355] hover:text-[#F5F5F4] active:scale-95 flex items-center justify-center gap-2;
+  box-shadow: 0 4px 14px 0 rgba(201, 169, 106, 0.2);
+}
+
+.input-gold {
+  @apply bg-[#1C1C1E] border border-[#27272A] rounded-lg px-4 py-2.5 text-[#F5F5F4] outline-none focus:border-[#C9A96A]/50 transition-all placeholder:text-[#A1A1AA] text-sm;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-700;
+}
+
+/* Animations */
+@keyframes gold-shine {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-gold-shine {
+  animation: gold-shine 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
