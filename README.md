@@ -16,12 +16,14 @@ A full-stack web application designed to help students manage job opportunities,
 ## Tech Stack
 
 ### Frontend
+
 - React.js
 - Vite
 - TailwindCSS
 - Axios
 
 ### Backend
+
 - Node.js
 - Express.js
 - REST APIs
@@ -29,6 +31,7 @@ A full-stack web application designed to help students manage job opportunities,
 - bcrypt
 
 ### Database
+
 - MongoDB
 - Mongoose
 
@@ -43,35 +46,58 @@ Placement-tracker-system/
     ├── models/
     ├── routes/
     └── server.js
+```
 
-Getting Started
-Prerequisites
-Node.js
-MongoDB
-Git
-Clone the repository
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- MongoDB
+- Git
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/HARSHITKALRAAA/Placement-tracker-system.git
 cd Placement-tracker-system
-Install frontend dependencies
+```
+
+### Install Frontend Dependencies
+
+```bash
 cd client
 npm install
-Install backend dependencies
+```
+
+### Install Backend Dependencies
 
 Open another terminal:
 
+```bash
 cd server
 npm install
-Run the backend
+```
+
+### Run the Backend
+
+```bash
 npm run dev
-Run the frontend
+```
+
+### Run the Frontend
+
+```bash
 cd client
 npm run dev
+```
 
 The application will then be available through the local Vite development URL.
 
-Future Improvements
-Advanced analytics
-Improved application filtering
-Deployment
-Additional application management features
-Enhanced user profile settings
+## Future Improvements
+
+- Advanced analytics
+- Improved application filtering
+- Deployment
+- Additional application management features
+- Enhanced user profile settings
