@@ -1,38 +1,77 @@
-# Placement Tracker
+# Placement Tracker System
 
-A smart placement tracker for students to organize opportunities, track applications, and manage preparation.
-
-## Tech Stack
-- **Frontend**: React, Vite, TailwindCSS
-- **Backend**: Node.js, Express, MongoDB
-
-## Getting Started
-
-### Prerequisites
-- Node.js installed
-- MongoDB running locally (default: `mongodb://localhost:27017/placement-tracker`)
-
-### Installation & Run
-
-1. **Backend Setup**
-   Open a terminal and run:
-   ```bash
-   cd server
-   npm install
-   npm run dev
-   ```
-   Server will start on `http://localhost:5000`.
-
-2. **Frontend Setup**
-   Open another terminal and run:
-   ```bash
-   cd client
-   npm install
-   npm run dev
-   ```
-   Frontend will start on `http://localhost:5173`.
+A full-stack web application designed to help students manage job opportunities, applications, interviews, deadlines, and placement progress in one place.
 
 ## Features
-- Dashboard with application stats
+
+- User registration and login
+- Secure authentication using JWT
 - Add and manage job opportunities
-- diverse status tracking (Applied, Interview, Selected, Rejected)
+- Track application status
+- Dashboard with application statistics
+- Application calendar
+- Search and filtering
+- Responsive user interface
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- TailwindCSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- REST APIs
+- JWT Authentication
+- bcrypt
+
+### Database
+- MongoDB
+- Mongoose
+
+## Project Structure
+
+```text
+Placement-tracker-system/
+├── client/
+│   ├── public/
+│   └── src/
+└── server/
+    ├── models/
+    ├── routes/
+    └── server.js
+
+Getting Started
+Prerequisites
+Node.js
+MongoDB
+Git
+Clone the repository
+git clone https://github.com/HARSHITKALRAAA/Placement-tracker-system.git
+cd Placement-tracker-system
+Install frontend dependencies
+cd client
+npm install
+Install backend dependencies
+
+Open another terminal:
+
+cd server
+npm install
+Run the backend
+npm run dev
+Run the frontend
+cd client
+npm run dev
+
+The application will then be available through the local Vite development URL.
+
+Future Improvements
+Advanced analytics
+Improved application filtering
+Deployment
+Additional application management features
+Enhanced user profile settings
